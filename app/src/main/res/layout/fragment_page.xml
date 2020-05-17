@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PageFragment"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text"
+            android:hint="Enter starting point!"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="22sp">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/button"
+            android:text="Search"
+            android:background="#3F51B5"
+            android:textColor="@android:color/white"
+            android:textSize="20sp">
+        </Button>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/list">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_text1"
+            android:hint="Enter finish!"
+            android:importantForAutofill="no"
+            android:inputType="text"
+            android:textSize="22sp">
+        </EditText>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="45dp"
+            android:id="@+id/button1"
+            android:text="Search"
+            android:background="#3F51B5"
+            android:textColor="@android:color/white"
+            android:textSize="20sp">
+        </Button>
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/list1">
+    </ListView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/res_button"
+        android:gravity="center"
+        android:text="Find the road"
+        android:textSize="20sp"
+        android:onClick="onShowPathClick"
+        android:background="#3F51B5"
+        android:textColor="@android:color/white"
+        tools:ignore="OnClick">
+    </Button>
+
+
+</LinearLayout>
